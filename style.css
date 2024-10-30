@@ -1,0 +1,194 @@
+@font-face {
+    font-family: code;
+    src: url(fonts/code/CODE\ Light.otf);
+}
+
+ @font-face {
+    font-family: geo sans;
+    src: url(fonts/geo_sans_light/GeosansLight-Oblique.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(49, 12, 20);
+}
+
+h1{
+    font-size: 2.5em;
+    text-align: center;
+    color: rgb(235, 227, 227);
+}
+
+h1::before{
+    content: "Tema: ";
+    color: rgb(255, 242, 242);
+}
+
+h2 {
+    color: white;
+    font-family: code;
+    text-align: center;
+}
+
+header{
+    font-family: geo sans;
+}
+
+nav ul{
+    /* background-color: rgb(236, 255, 206); */
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    /* justify-content: space-around; */
+}
+
+nav ul li{
+    margin: 0 15px;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(233, 222, 222);
+    padding: 10px;
+
+
+}
+
+p{
+    padding: 5px;
+    color: #f7eeee;
+}
+
+section{
+    font-family: Arial, sans-serif;
+    margin: 10px;
+}
+
+nav ul li a:hover{
+    color: grey;
+}
+
+nav ul li a:active{
+    /* background-color: blueviolet; */
+    color: blueviolet;
+}
+
+nav ul li a:visited{
+    /* background-color: blueviolet; */
+    color: rgb(17, 0, 255);
+}
+
+p::first-letter{
+    font-size: 2em;
+    color: rgb(253, 246, 246);
+    font-weight: 700;
+}
+
+p::selection{
+    background-color: gray;
+    color: aqua;
+}
+
+#alta {
+    display: flex;
+   
+}
+
+.card alta{
+    align-items: end;
+}
+
+#media{
+    display: flex;
+}
+
+.media{
+    padding: 10px;
+}
+
+#baixa{
+    display: flex;
+}
+
+footer{
+    text-align: center;
+    color: white;
+    
+}
+
+@media (max-width: 768px) {
+
+    header{
+        padding: 10px;
+        color: #000000;
+    }
+
+    body{
+        background-color: #d4d0d0;
+        
+    }
+
+    h1{
+        font-size: 2.3em;
+        text-align: center;
+        color: #000000;
+    }
+
+    h1::before{
+        content: "Tema: ";
+        color: #000000;
+    }
+
+    h2{
+        color: #000000;
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        color: #050505;
+        padding: 10px;
+        font-size: 1.1rem;
+    
+    
+    }
+
+    nav ul li a:hover{
+        color: #c43b3b;
+    }
+
+    p{
+        color: #000000;
+        padding: 10px;
+        margin: 15px;
+    }
+
+    p::first-letter{
+        font-size: 1em;
+        color: rgb(0, 0, 0);
+        font-weight: 700;
+    }
+   
+    section{
+        flex-direction: column;
+        align-items: center;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    img {
+        width: 400px;
+        /* height: 300px; */
+    }
+
+    footer{
+        color: #000000;
+    }
+}
